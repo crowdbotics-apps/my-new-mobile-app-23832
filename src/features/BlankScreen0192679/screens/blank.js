@@ -21,6 +21,7 @@ import { SlideMenuIcon } from "../../../navigator/slideMenuIcon"
 class Blank extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {}
   }
   static navigationOptions = ({ navigation }) => {
@@ -28,17 +29,34 @@ class Blank extends React.Component {
   }
 
   render = () => (
-    <View>
-      <Button title="Press me!" onPress={() => alert("Pressed!")} />
+    <View style={styles.View_1}>
+      <View style={styles.View_3} />
     </View>
   )
 }
 
-const styles = StyleSheet.create({ View_1: {}, Button_3: {} })
+const styles = StyleSheet.create({
+  View_1: { width: "100%", alignSelf: "center", justifyContent: "center" },
+  View_3: {
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    flexDirection: "column",
+    flexWrap: "wrap",
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    alignContent: "stretch"
+  }
+})
 const mapStateToProps = state => {
   return {}
 }
+
 const mapDispatchToProps = () => {
   return {}
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(Blank)
