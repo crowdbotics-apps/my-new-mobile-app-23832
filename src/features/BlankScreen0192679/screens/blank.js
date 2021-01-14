@@ -30,27 +30,37 @@ class Blank extends React.Component {
 
   render = () => (
     <View style={styles.View_1}>
-      <View style={styles.View_3} />
+      <Text style={styles.Text_3}>Welcome, User</Text>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  View_1: { width: "100%", alignSelf: "center", justifyContent: "center" },
-  View_3: {
-    marginTop: 0,
-    marginBottom: 0,
-    paddingLeft: 0,
-    paddingRight: 0,
-    paddingTop: 0,
-    paddingBottom: 0,
-    flexDirection: "column",
-    flexWrap: "wrap",
-    justifyContent: "flex-start",
-    alignItems: "flex-start",
-    alignContent: "stretch"
+  View_1: {
+    width: "100%",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  Text_3: {
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    fontSize: 21,
+    color: "#4c3196",
+    fontFamily: "OpenSans-Bold",
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
   }
 })
+
 const mapStateToProps = state => {
   return {}
 }
