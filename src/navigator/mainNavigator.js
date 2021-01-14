@@ -6,7 +6,7 @@ import SplashScreen from "../features/SplashScreen";
 import SideMenu from './sideMenu';
 //@BlueprintImportInsertion
 import BlankScreen0192679Navigator from '../features/BlankScreen0192679/navigator';
-
+import CbSplashScreen2193302Navigator from '../features/CbSplashScreen2193302/navigator';
 /**
  * new navigators can be imported here
  */
@@ -14,7 +14,7 @@ import BlankScreen0192679Navigator from '../features/BlankScreen0192679/navigato
 const AppNavigator = {
 
     //@BlueprintNavigationInsertion
-BlankScreen0192679: { screen: BlankScreen0192679Navigator },
+BlankScreen0192679: { screen: BlankScreen0192679Navigator }, CbSplashScreen2193302: { screen: CbSplashScreen2193302Navigator },
 
     /** new navigators can be added here */
     SplashScreen: {
@@ -27,7 +27,8 @@ const DrawerAppNavigator = createDrawerNavigator(
     ...AppNavigator,
   },
   {
-    contentComponent: SideMenu
+    contentComponent: SideMenu,
+    initialRouteName: “CbSplashScreen2193302”, // Splash Screen
   },
 );
 
